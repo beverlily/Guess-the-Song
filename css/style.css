@@ -1,0 +1,219 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+/************************************************
+ * TABLE OF CONTENTS
+ * =================
+ * 1. DEFAULT OVERRIDES
+ * 2. GENERAL CLASSES
+ * 3. GENERAL STYLING
+ * 4. HEADER AND FOOTER
+ * 5. GAME
+ * 6. ANIMATIONS
+ * 7. SKIP TO MAIN
+ ***********************************************/
+
+/*1. DEFAULT OVERRIDES*/
+html{
+  box-sizing: border-box;
+  font-size: 16px;
+  font-family: 'Open Sans', sans-serif;
+}
+
+*, *::before, *::after{
+  box-sizing: inherit;
+}
+
+body{
+  margin: 0;
+  padding: 0;
+  color: white;
+}
+
+audio{
+  display: none;
+}
+
+img{
+  padding: 0;
+  margin: 0;
+}
+
+a{
+  text-decoration: none;
+  transition: all 0.5s;
+}
+
+ul{
+  list-style: none;
+  padding: 0;
+}
+
+li{
+  display: inline-block;
+}
+
+.button{
+  border: 1px solid white;
+  padding: 5px;
+  border-radius: 5px;
+  display: inline-block;
+  transition: all .5s;
+  background: none;
+  color: white;
+  padding: 7px 20px;
+  text-transform: uppercase;
+}
+
+.button:hover{
+  background-color: #3b3948;
+  box-shadow: 0 0 10px rgba(255,255,255, 1);
+  cursor: pointer;
+}
+
+/*2. GENERAL CLASSES*/
+.page-wrapper{
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.flex-container{
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.hidden{
+  position: absolute;
+  left: -10000px;
+}
+
+/*3. GENERAL STYLING*/
+#main{
+	background-image: url("../images/concert.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-attachment: fixed;
+	min-height: 100vh;
+}
+
+/*4. HEADER AND FOOTER*/
+#main-header, #main-footer{
+  background-color: #000;
+}
+
+#main-header .page-wrapper{
+  margin: 0;
+}
+
+#main-header-nav{
+  display: inline-block;
+  vertical-align: middle;
+}
+
+#main-header-nav a{
+  display: inline-block;
+  margin-left: 20px;
+  color: white;
+}
+
+#main-header-nav a:hover{
+  text-decoration: underline;
+}
+
+#main-header-logo{
+  display: inline-block;
+  vertical-align: middle;
+  max-width: 30px;
+  margin-left: 50px;
+}
+
+/*5. GAME*/
+#lyrics, #searching{
+	margin: 20px 0;
+}
+
+#error-message{
+	color: red;
+	padding: 5px;
+}
+
+#message{
+	font-size: 1.5rem;
+	padding: 10px;
+}
+
+#try-btn{
+	margin: 15px;
+}
+#game{
+	padding: 50px 100px;
+}
+
+#lyrics{
+	background-color: rgba(0, 0, 0, 0.5);
+	margin: 50px;
+	padding: 20px;
+}
+
+/*6. ANIMATIONS*/
+@keyframes slightFade{
+  0%{
+    opacity: 0.25;
+  }
+  100%{
+    opacity: 1;
+  }
+}
+
+.searching:nth-child(1){
+  animation: slightFade 2s infinite 100ms;
+}
+
+.searching:nth-child(2){
+  animation: slightFade 2s infinite 200ms;
+}
+
+.searching:nth-child(3){
+  animation: slightFade 2s infinite 300ms;
+}
+
+.searching:nth-child(4){
+  animation: slightFade 2s infinite 400ms;
+}
+
+.searching:nth-child(5){
+  animation: slightFade 2s infinite 500ms;
+}
+
+.searching:nth-child(6){
+  animation: slightFade 2s infinite 600ms;
+}
+
+.searching:nth-child(7){
+  animation: slightFade 2s infinite 700ms;
+}
+
+.searching:nth-child(8){
+  animation: slightFade 2s infinite 800ms;
+}
+
+.searching:nth-child(9){
+  animation: slightFade 2s infinite 900ms;
+}
+
+.searching:nth-child(10){
+  animation: slightFade 2s infinite 1000ms;
+}
+
+.searching:nth-child(11){
+  animation: slightFade 2s infinite 1100ms;
+}
+
+.searching:nth-child(12){
+  animation: slightFade 2s infinite 1200ms;
+}
+
+/*7. SKIP TO MAIN*/
+#skip-to-main:focus{
+   position: relative;
+   left: 0;
+}
